@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testNGMyPractice.Hardassertion">
+        <methods>
+          <include name="testmethod1"/>
+        </methods>
+      </class> <!-- testNGMyPractice.Hardassertion -->
+      <class name="testNGMyPractice.InvocationTimeout">
+        <methods>
+          <include name="success"/>
+        </methods>
+      </class> <!-- testNGMyPractice.InvocationTimeout -->
+      <class name="testNGMyPractice.DependsOnGroups">
+        <methods>
+          <include name="testMethod2"/>
+          <include name="testMethod1"/>
+        </methods>
+      </class> <!-- testNGMyPractice.DependsOnGroups -->
+      <class name="testNGMyPractice.GroupsArgument">
+        <methods>
+          <include name="testMethod1"/>
+        </methods>
+      </class> <!-- testNGMyPractice.GroupsArgument -->
+      <class name="testNGMyPractice.ParametersExample1">
+        <methods>
+          <include name="oHRMLogin"/>
+          <include name="verifyDashboard"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNGMyPractice.ParametersExample1 -->
+      <class name="testNGMyPractice.DataprovoderIntegrateTest">
+        <methods>
+          <include name="oHRMLogin" invocation-numbers="1"/>
+          <include name="setup"/>
+          <include name="verifyDashboard"/>
+        </methods>
+      </class> <!-- testNGMyPractice.DataprovoderIntegrateTest -->
+      <class name="testNGMyPractice.DependsOnMethods">
+        <methods>
+          <include name="loginMethod"/>
+          <include name="leaveMethod"/>
+        </methods>
+      </class> <!-- testNGMyPractice.DependsOnMethods -->
+      <class name="testNGMyPractice.Softassertion">
+        <methods>
+          <include name="testmethod"/>
+        </methods>
+      </class> <!-- testNGMyPractice.Softassertion -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

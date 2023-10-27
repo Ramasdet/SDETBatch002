@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="31" passed="21" failed="7" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-26T08:57:57Z" name="Suite" finished-at="2023-10-26T08:58:53Z" duration-ms="55946">
+    <groups>
+      <group name="regression">
+        <method signature="GroupsArgument.testmethod2()[pri:0, instance:testNGMyPractice.GroupsArgument@4cdd2c73]" name="testmethod2" class="testNGMyPractice.GroupsArgument"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="DependsOnGroups.testMethod1()[pri:0, instance:testNGMyPractice.DependsOnGroups@5e39850]" name="testMethod1" class="testNGMyPractice.DependsOnGroups"/>
+        <method signature="GroupsArgument.testMethod1()[pri:0, instance:testNGMyPractice.GroupsArgument@4cdd2c73]" name="testMethod1" class="testNGMyPractice.GroupsArgument"/>
+      </group> <!-- smoke -->
+      <group name="Regression">
+        <method signature="DependsOnGroups.testMethod2()[pri:0, instance:testNGMyPractice.DependsOnGroups@5e39850]" name="testMethod2" class="testNGMyPractice.DependsOnGroups"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2023-10-26T08:57:57Z" name="Test" finished-at="2023-10-26T08:58:53Z" duration-ms="55946">
+      <class name="testNGMyPractice.ParametersExample1">
+        <test-method signature="oHRMLogin(java.lang.String, java.lang.String)[pri:0, instance:testNGMyPractice.ParametersExample1@5ac7aa18]" started-at="2023-10-26T08:58:39Z" name="oHRMLogin" finished-at="2023-10-26T08:58:39Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'un' is required by @Test on method oHRMLogin but has not been marked @Optional or defined
+in C:\Users\jsrao\eclipse-workspace\com.RamaOrangeHRM.org\Batch002.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'un' is required by @Test on method oHRMLogin but has not been marked @Optional or defined
+in C:\Users\jsrao\eclipse-workspace\com.RamaOrangeHRM.org\Batch002.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oHRMLogin -->
+      </class> <!-- testNGMyPractice.ParametersExample1 -->
+      <class name="testNGMyPractice.DescriptionArgument">
+        <test-method signature="success()[pri:0, instance:testNGMyPractice.DescriptionArgument@61799544]" started-at="2023-10-26T08:58:47Z" name="success" description="This is a success method which can display i want success" finished-at="2023-10-26T08:58:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success -->
+      </class> <!-- testNGMyPractice.DescriptionArgument -->
+      <class name="testNGMyPractice.ParallelExecution">
+        <test-method signature="chromeMethod()[pri:0, instance:testNGMyPractice.ParallelExecution@398474a2]" started-at="2023-10-26T08:58:39Z" name="chromeMethod" finished-at="2023-10-26T08:58:47Z" duration-ms="8453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromeMethod -->
+      </class> <!-- testNGMyPractice.ParallelExecution -->
+      <class name="testNGMyPractice.invocationCountArgument">
+        <test-method signature="testmethod()[pri:0, instance:testNGMyPractice.invocationCountArgument@1603dc2f]" started-at="2023-10-26T08:58:39Z" name="testmethod" finished-at="2023-10-26T08:58:39Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+        <test-method signature="testmethod()[pri:0, instance:testNGMyPractice.invocationCountArgument@1603dc2f]" started-at="2023-10-26T08:58:39Z" name="testmethod" finished-at="2023-10-26T08:58:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+        <test-method signature="testmethod()[pri:0, instance:testNGMyPractice.invocationCountArgument@1603dc2f]" started-at="2023-10-26T08:58:39Z" name="testmethod" finished-at="2023-10-26T08:58:39Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+        <test-method signature="testmethod()[pri:0, instance:testNGMyPractice.invocationCountArgument@1603dc2f]" started-at="2023-10-26T08:58:39Z" name="testmethod" finished-at="2023-10-26T08:58:39Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+        <test-method signature="testmethod()[pri:0, instance:testNGMyPractice.invocationCountArgument@1603dc2f]" started-at="2023-10-26T08:58:39Z" name="testmethod" finished-at="2023-10-26T08:58:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+        <test-method signature="testmethod()[pri:0, instance:testNGMyPractice.invocationCountArgument@1603dc2f]" started-at="2023-10-26T08:58:39Z" name="testmethod" finished-at="2023-10-26T08:58:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+        <test-method signature="testmethod()[pri:0, instance:testNGMyPractice.invocationCountArgument@1603dc2f]" started-at="2023-10-26T08:58:39Z" name="testmethod" finished-at="2023-10-26T08:58:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+        <test-method signature="testmethod()[pri:0, instance:testNGMyPractice.invocationCountArgument@1603dc2f]" started-at="2023-10-26T08:58:39Z" name="testmethod" finished-at="2023-10-26T08:58:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+      </class> <!-- testNGMyPractice.invocationCountArgument -->
+      <class name="testNGMyPractice.GroupsArgument">
+        <test-method signature="testMethod1()[pri:0, instance:testNGMyPractice.GroupsArgument@4cdd2c73]" started-at="2023-10-26T08:58:05Z" name="testMethod1" finished-at="2023-10-26T08:58:05Z" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method signature="testmethod2()[pri:0, instance:testNGMyPractice.GroupsArgument@4cdd2c73]" started-at="2023-10-26T08:58:05Z" name="testmethod2" finished-at="2023-10-26T08:58:05Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod2 -->
+      </class> <!-- testNGMyPractice.GroupsArgument -->
+      <class name="testNGMyPractice.DataproviderEx1">
+        <test-method signature="testMethod1(java.lang.String, java.lang.String)[pri:0, instance:testNGMyPractice.DataproviderEx1@78c1a023]" started-at="2023-10-26T08:58:47Z" name="testMethod1" data-provider="ramaData" finished-at="2023-10-26T08:58:47Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mokshi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mokshi123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method signature="testMethod1(java.lang.String, java.lang.String)[pri:0, instance:testNGMyPractice.DataproviderEx1@78c1a023]" started-at="2023-10-26T08:58:47Z" name="testMethod1" data-provider="ramaData" finished-at="2023-10-26T08:58:47Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+      </class> <!-- testNGMyPractice.DataproviderEx1 -->
+      <class name="testNGMyPractice.PriorityArgument">
+        <test-method signature="mokshitha()[pri:0, instance:testNGMyPractice.PriorityArgument@4e4c3a38]" started-at="2023-10-26T08:58:08Z" name="mokshitha" finished-at="2023-10-26T08:58:08Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mokshitha -->
+        <test-method signature="subbarao()[pri:2, instance:testNGMyPractice.PriorityArgument@4e4c3a38]" started-at="2023-10-26T08:58:47Z" name="subbarao" finished-at="2023-10-26T08:58:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subbarao -->
+        <test-method signature="rama()[pri:1, instance:testNGMyPractice.PriorityArgument@4e4c3a38]" started-at="2023-10-26T08:58:47Z" name="rama" finished-at="2023-10-26T08:58:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rama -->
+      </class> <!-- testNGMyPractice.PriorityArgument -->
+      <class name="testNGMyPractice.InvocationTimeout">
+        <test-method signature="success()[pri:0, instance:testNGMyPractice.InvocationTimeout@4abf3f0]" started-at="2023-10-26T08:58:05Z" name="success" finished-at="2023-10-26T08:58:08Z" duration-ms="3016" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method testNGMyPractice.InvocationTimeout.success() didn't finish within the time-out 3000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method testNGMyPractice.InvocationTimeout.success() didn't finish within the time-out 3000
+at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+at java.base/java.io.FileOutputStream.write(FileOutputStream.java:373)
+at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+at java.base/java.io.PrintStream.implWrite(PrintStream.java:645)
+at java.base/java.io.PrintStream.write(PrintStream.java:623)
+at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:313)
+at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:409)
+at java.base/sun.nio.cs.StreamEncoder.lockedFlushBuffer(StreamEncoder.java:127)
+at java.base/sun.nio.cs.StreamEncoder.flushBuffer(StreamEncoder.java:114)
+at java.base/java.io.OutputStreamWriter.flushBuffer(OutputStreamWriter.java:193)
+at java.base/java.io.PrintStream.implWriteln(PrintStream.java:849)
+at java.base/java.io.PrintStream.writeln(PrintStream.java:826)
+at java.base/java.io.PrintStream.println(PrintStream.java:1168)
+at testNGMyPractice.InvocationTimeout.success(InvocationTimeout.java:8)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:40)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success -->
+      </class> <!-- testNGMyPractice.InvocationTimeout -->
+      <class name="testNGMyPractice.DependsOnGroups">
+        <test-method signature="testMethod1()[pri:0, instance:testNGMyPractice.DependsOnGroups@5e39850]" started-at="2023-10-26T08:58:39Z" name="testMethod1" finished-at="2023-10-26T08:58:39Z" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at testNGMyPractice.DependsOnGroups.testMethod1(DependsOnGroups.java:10)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method signature="testMethod2()[pri:0, instance:testNGMyPractice.DependsOnGroups@5e39850]" started-at="2023-10-26T08:58:47Z" name="testMethod2" depends-on-groups="smoke" finished-at="2023-10-26T08:58:47Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependsOnGroups.testMethod2()[pri:0, instance:testNGMyPractice.DependsOnGroups@5e39850] depends on not successfully finished methods in group "smoke"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependsOnGroups.testMethod2()[pri:0, instance:testNGMyPractice.DependsOnGroups@5e39850] depends on not successfully finished methods in group "smoke"
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+      </class> <!-- testNGMyPractice.DependsOnGroups -->
+      <class name="testNGMyPractice.Hardassertion">
+        <test-method signature="testmethod1()[pri:0, instance:testNGMyPractice.Hardassertion@293cde83]" started-at="2023-10-26T08:58:08Z" name="testmethod1" finished-at="2023-10-26T08:58:08Z" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[both values are mismatch expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: both values are mismatch expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at testNGMyPractice.Hardassertion.testmethod1(Hardassertion.java:12)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod1 -->
+      </class> <!-- testNGMyPractice.Hardassertion -->
+      <class name="testNGMyPractice.EnableArgument">
+        <test-method signature="mokshi()[pri:0, instance:testNGMyPractice.EnableArgument@c27d163]" started-at="2023-10-26T08:58:39Z" name="mokshi" finished-at="2023-10-26T08:58:39Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mokshi -->
+        <test-method signature="rama()[pri:0, instance:testNGMyPractice.EnableArgument@c27d163]" started-at="2023-10-26T08:58:39Z" name="rama" finished-at="2023-10-26T08:58:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rama -->
+      </class> <!-- testNGMyPractice.EnableArgument -->
+      <class name="testNGMyPractice.DataprovoderIntegrateTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testNGMyPractice.DataprovoderIntegrateTest@2b4c3c29]" started-at="2023-10-26T08:57:57Z" name="setup" finished-at="2023-10-26T08:58:02Z" duration-ms="5398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testNGMyPractice.ParametersExample1@5ac7aa18]" started-at="2023-10-26T08:58:02Z" name="setup" finished-at="2023-10-26T08:58:05Z" duration-ms="2512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="oHRMLogin(java.lang.String, java.lang.String)[pri:0, instance:testNGMyPractice.DataprovoderIntegrateTest@2b4c3c29]" started-at="2023-10-26T08:58:08Z" name="oHRMLogin" data-provider="ramaData" finished-at="2023-10-26T08:58:08Z" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oHRMLogin -->
+        <test-method signature="oHRMLogin(java.lang.String, java.lang.String)[pri:0, instance:testNGMyPractice.DataprovoderIntegrateTest@2b4c3c29]" started-at="2023-10-26T08:58:08Z" name="oHRMLogin" data-provider="ramaData" finished-at="2023-10-26T08:58:39Z" duration-ms="31048" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mokshi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mokshi123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=118.0.5993.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c08e561d685fd18cff28cce0394f48e0, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.117, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\jsrao\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51843}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51843/devtoo..., se:cdpVersion: 118.0.5993.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c08e561d685fd18cff28cce0394f48e0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=118.0.5993.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c08e561d685fd18cff28cce0394f48e0, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.117, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\jsrao\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51843}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51843/devtoo..., se:cdpVersion: 118.0.5993.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c08e561d685fd18cff28cce0394f48e0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at testNGMyPractice.DataprovoderIntegrateTest.oHRMLogin(DataprovoderIntegrateTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oHRMLogin -->
+        <test-method is-config="true" signature="verifyDashboard()[pri:0, instance:testNGMyPractice.DataprovoderIntegrateTest@2b4c3c29]" started-at="2023-10-26T08:58:47Z" name="verifyDashboard" finished-at="2023-10-26T08:58:47Z" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNGMyPractice.ParametersExample1@5ac7aa18]" started-at="2023-10-26T08:58:47Z" name="tearDown" finished-at="2023-10-26T08:58:53Z" duration-ms="5170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNGMyPractice.DataprovoderIntegrateTest -->
+      <class name="testNGMyPractice.DependsOnMethods">
+        <test-method signature="loginMethod()[pri:0, instance:testNGMyPractice.DependsOnMethods@37fdfb05]" started-at="2023-10-26T08:58:39Z" name="loginMethod" finished-at="2023-10-26T08:58:39Z" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at testNGMyPractice.DependsOnMethods.loginMethod(DependsOnMethods.java:9)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginMethod -->
+        <test-method signature="leaveMethod()[pri:0, instance:testNGMyPractice.DependsOnMethods@37fdfb05]" started-at="2023-10-26T08:58:47Z" name="leaveMethod" finished-at="2023-10-26T08:58:47Z" depends-on-methods="testNGMyPractice.DependsOnMethods.loginMethod" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependsOnMethods.leaveMethod()[pri:0, instance:testNGMyPractice.DependsOnMethods@37fdfb05] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependsOnMethods.leaveMethod()[pri:0, instance:testNGMyPractice.DependsOnMethods@37fdfb05] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leaveMethod -->
+      </class> <!-- testNGMyPractice.DependsOnMethods -->
+      <class name="testNGMyPractice.AlwaysrunArgument">
+        <test-method signature="setup()[pri:0, instance:testNGMyPractice.AlwaysrunArgument@57c88764]" started-at="2023-10-26T08:58:39Z" name="setup" finished-at="2023-10-26T08:58:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- testNGMyPractice.AlwaysrunArgument -->
+      <class name="testNGMyPractice.Softassertion">
+        <test-method signature="testmethod()[pri:0, instance:testNGMyPractice.Softassertion@78faea5f]" started-at="2023-10-26T08:58:39Z" name="testmethod" finished-at="2023-10-26T08:58:39Z" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at testNGMyPractice.Softassertion.testmethod(Softassertion.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+      </class> <!-- testNGMyPractice.Softassertion -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

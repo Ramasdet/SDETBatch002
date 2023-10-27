@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testNGMyPractice.GroupsArgument"/>
+      <class name="testNGMyPractice.InvocationTimeout"/>
+      <class name="testNGMyPractice.PriorityArgument"/>
+      <class name="testNGMyPractice.Hardassertion"/>
+      <class name="testNGMyPractice.DataprovoderIntegrateTest"/>
+      <class name="testNGMyPractice.EnableArgument"/>
+      <class name="testNGMyPractice.AlwaysrunArgument"/>
+      <class name="testNGMyPractice.Softassertion"/>
+      <class name="testNGMyPractice.DependsOnMethods"/>
+      <class name="testNGMyPractice.ParametersExample1"/>
+      <class name="testNGMyPractice.DependsOnGroups"/>
+      <class name="testNGMyPractice.invocationCountArgument"/>
+      <class name="testNGMyPractice.ParallelExecution"/>
+      <class name="testNGMyPractice.DescriptionArgument"/>
+      <class name="testNGMyPractice.DataproviderEx1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ramaSuite">
+	<test thread-count="5" name="ramaTest">
+		<groups>
+			<run>
+				<include name="pim" />
+				<exclude name="addemp" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="testNgGroupDiscussion.Groups" />
+		</classes>
+	</test> <!-- ramaTest -->
+</suite> <!-- ramaSuite -->

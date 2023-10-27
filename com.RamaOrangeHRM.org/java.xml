@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="classes">
+	<test thread-count="30" name="Test">
+		<classes>
+			<class name="com.Ramajava.org.Arthematicoperators"/>
+			<class name="com.Ramajava.org.Assignmentoperators"/>
+			<class name="com.Ramajava.org.Conditionalstatements"/>
+			<class name="com.Ramajava.org.Constructor1"/>
+			<class name="com.Ramajava.org.Constructor2"/>
+			<class name="com.Ramajava.org.Constructor3"/>
+		</classes>
+	</test> 
+</suite> 

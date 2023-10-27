@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ramaSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ramaTest(failed)">
+    <groups>
+      <run>
+        <include name="pim"/>
+        <exclude name="addemp"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNgGroupDiscussion.Groups">
+        <methods>
+          <include name="click"/>
+          <include name="ohrmLogin"/>
+        </methods>
+      </class> <!-- testNgGroupDiscussion.Groups -->
+    </classes>
+  </test> <!-- ramaTest(failed) -->
+</suite> <!-- Failed suite [ramaSuite] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [parameterSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="parameterTest(failed)">
+    <parameter name="mn" value="sdet"/>
+    <parameter name="ln" value="122"/>
+    <parameter name="fn" value=" shareef ka baap"/>
+    <parameter name="un" value="Admin"/>
+    <parameter name="pws" value="admin123"/>
+    <classes>
+      <class name="testNgGroupDiscussion.Groups">
+        <methods>
+          <include name="setup"/>
+          <include name="click"/>
+          <include name="ohrmLogin"/>
+          <include name="click1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNgGroupDiscussion.Groups -->
+    </classes>
+  </test> <!-- parameterTest(failed) -->
+</suite> <!-- Failed suite [parameterSuite] -->
